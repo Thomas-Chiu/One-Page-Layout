@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <title>Document</title>
+  <style>
+    body {
+      background: #999;
+      height: 100vh;
+    }
+
+    .container-fluid {
+      height: 100%;
+    }
+
+    #mycarousel {
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid p-0 ">
+    <!-- navbar section -->
+    <nav id="myNavbar" class="navbar navbar-expand-md navbar-dark bg-transparent fixed-top">
+      <!-- navbar logo -->
+      <a href="#" class="navbar-brand">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myCollapse"><span
+          class="navbar-toggler-icon"></span></button>
+      <!-- navbar 選單 -->
+      <div id="myCollapse" class="collapse navbar-collapse text-white-50">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item mx-1"><a class="nav-link" href="#">Link1</a></li>
+          <li class="nav-item mx-1"><a class="nav-link" href="#">Link2</a></li>
+          <li class="nav-item mx-1"><a class="nav-link" href="#">Link3</a></li>
+          <li class="nav-item mx-1"><a class="nav-link" href="#">Link4</a></li>
+          <li class="nav-item mx-1"><a class="nav-link" href="#">Link5</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- <img class="d-block h-100" src="https://picsum.photos/1920/1080/?random=1"> -->
+    <!-- <img class="d-block w-100" src="https://picsum.photos/1920/1080/?random=2"> -->
+
+
+    <!-- carousel section -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!--  -->
+      <ul class="carousel-indicators">
+        <li class="active" data-target="#myCarousel" data-slide-to="0"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ul>
+
+      <div class="carousel-inner">
+        <div class="carousel-item acitve" data-interval="1500">
+          <img class="d-block w-100" src="https://picsum.photos/1920/1080/?random=1">
+        </div>
+        <div class="carousel-item" data-interval="1500">
+          <img class="d-block w-100" src="https://picsum.photos/1920/1080/?random=2">
+        </div>
+        <div class="carousel-item" data-interval="1500">
+          <img class="d-block w-100" src="https://picsum.photos/1920/1080/?random=3">
+        </div>
+      </div>
+
+
+
+    </div>
+
+
+
+  </div>
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="./js/jquery-3.5.1.min.js"></script>
+  <script src="./js/popper.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+</body>
+
+</html>
