@@ -10,23 +10,16 @@
   <link rel="stylesheet" href="./css/bootstrap.css">
   <title>Document</title>
   <style>
+    html,
     body {
       background: #999;
-      height: 100vh;
-    }
-
-    .container-fluid {
-      height: 100%;
-    }
-
-    #mycarousel {
       height: 100%;
     }
   </style>
 </head>
 
 <body>
-  <div class="container-fluid p-0 ">
+  <div class="container-fluid p-0 h-100">
     <!-- navbar section -->
     <nav id="myNavbar" class="navbar navbar-expand-md navbar-dark bg-transparent fixed-top">
       <!-- navbar logo -->
@@ -49,7 +42,7 @@
 
 
     <!-- carousel section -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div id="myCarousel" class="carousel slide h-100" data-ride="carousel">
       <!--  -->
       <ul class="carousel-indicators">
         <li class="active" data-target="#myCarousel" data-slide-to="0"></li>
@@ -58,7 +51,7 @@
       </ul>
 
       <div class="carousel-inner">
-        <div class="carousel-item acitve" data-interval="1500">
+        <div class="carousel-item active" data-interval="2000">
           <img class="d-block w-100" src="https://picsum.photos/1920/1080/?random=1">
         </div>
         <div class="carousel-item" data-interval="1500">
