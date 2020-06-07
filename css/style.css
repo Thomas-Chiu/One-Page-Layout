@@ -40,11 +40,6 @@ body {
   color: #fff;
 }
 
-/* #myFooter .row {
-  justify-content: center;
-  align-items: flex-start;
-} */
-
 #myFooter .row {
   text-align: left;
 }
