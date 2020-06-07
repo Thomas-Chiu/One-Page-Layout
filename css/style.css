@@ -4,6 +4,10 @@ body {
   height: 100%;
 }
 
+#myNavbar {
+  background: rgba(0, 0, 0, 0.5);
+}
+
 #myCards .container-fluid {
   background: #fff !important;
 }
@@ -36,13 +40,18 @@ body {
   color: #fff;
 }
 
-#myFooter .row:last-child {
-  text-align: center;
-  padding: 1.5rem 0 0;
+/* #myFooter .row {
+  justify-content: center;
+  align-items: flex-start;
+} */
+
+#myFooter .row {
+  text-align: left;
 }
 
-#myFooter .col-6 {
-  padding: 0;
+#myFooter .col-12 {
+  text-align: center;
+  padding-top: 2rem;
 }
 
 #myFooter p {
@@ -52,3 +61,55 @@ body {
 #myFooter a {
   color: #fff;
 }
+
+@media(min-width: 768px){
+
+  #myCards .row {
+    padding: 7.5rem 12.5rem;
+    flex-wrap: nowrap;
+  }
+  
+  #myCards .card {
+    margin-right: 2rem;
+  }
+
+  #myCollection .row {
+    padding-top: 0rem;
+  }
+
+  #myCollection .card {
+    height: 100%; 
+    background: #eee;
+    flex-direction: row;
+  }
+
+  #myCollection .card:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  #myCollection .col-md-6 {
+    padding: 0;
+  }
+
+  #myCollection .card-body {
+    margin: auto;
+  }
+
+  #myCollection img { /* 圖片 4 * 6，單位試很久 */
+    width: 50vw;
+    height: 75vh;
+  }
+
+  #myFooter .row {
+    justify-content: space-evenly;
+    padding-left: 2rem;
+  }
+
+  #myFooter .col-md-3 {
+    padding: 0 !important;
+  }
+
+  #myFooter .col-md-3:first-child {
+    text-align: center;
+  }
+} 
